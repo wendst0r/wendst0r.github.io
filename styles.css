@@ -12,6 +12,11 @@ header{
     color: black;
     margin: 20px;
     z-index: 5;
+    animation: 4s h1;
+}
+@keyframes h1{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 .buy-buttom{
     position: absolute;
@@ -257,13 +262,19 @@ transition: all, 0s, ease-in, 0.5s;
     left: 1210px;
 }
 .hint{position:absolute;
-top: 470px;
+top: 480px;
 left: 50px;
 color:grey;
-font-family:  sans-serif;}
+font-family:  sans-serif;
+animation: 1s hint infinite;}
+@keyframes hint{
+    0%{top: 480px;}
+    65%{top: 470px;}
+    100%{top: 480px;}
+}
 
 .whywe{position: absolute;
-top: 1300px;
+top: 1360px;
 left: 70px;
 color: orange;
 font-family: sans-serif;
